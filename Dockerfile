@@ -7,7 +7,7 @@ ENV GRADLE_HOME=/opt/gradle/gradle-$GRADLE_VERSION
 ENV PATH=$PATH:$GRADLE_HOME/bin
 WORKDIR /tmp
 RUN apt-get update
-RUN apt-get install software-properties-common python-software-properties unzip -y
+RUN apt-get install software-properties-common unzip -y
 RUN add-apt-repository ppa:linuxuprising/java
 RUN apt-get update
 RUN echo oracle-java10-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
