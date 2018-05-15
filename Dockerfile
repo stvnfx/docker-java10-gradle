@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER Steven Fourie "stevenfx@outlook.com"
-ENV JAVA_HOME /usr/lib/jvm/java-9-oracle
+ENV JAVA_HOME /usr/lib/jvm/java-10-oracle
 ENV JRE_HOME ${JAVA_HOME}/jre
 ENV GRADLE_VERSION=4.6
 ENV GRADLE_HOME=/opt/gradle/gradle-$GRADLE_VERSION
